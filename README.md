@@ -1,34 +1,264 @@
 # Interaktív vizsga jegyzet
 Jegyzet az interaktív vizsgához
+<br><br>
 
-### Git Parancsok Jegyzetei
 
-1. **git init**: Új Git tárolót inicializál az aktuális könyvtárban a verziókövetés megkezdéséhez.  
+### Csoportmunkaeszközök, Git
 
-2. **git clone <repository>**: Letölt egy távoli tárolót a helyi gépre az összes fájllal és előzménnyel.  
+- **init**: Új Git tárolót inicializál az aktuális könyvtárban a verziókövetés megkezdéséhez.  
 
-3. **git add <file>**: A megadott fájlok változtatásait előkészíti a következő commit számára.  
+- **clone**: Letölt egy távoli tárolót a helyi gépre az összes fájllal és előzménnyel.  
 
-4. **git commit -m "<message>"**: Az előkészített változtatásokat commitként menti egy leíró üzenettel.  
+- **add <file>**: A megadott fájlok változtatásait előkészíti a következő commit számára.  
 
-5. **git status**: Megmutatja a módosított, előkészített vagy követetlen fájlok aktuális állapotát.  
+- **commit -m "<message>"**: Az előkészített változtatásokat commitként menti egy leíró üzenettel.  
 
-6. **git push <remote> <branch>**: Feltölti a helyi commitokat a megadott távoli ágra.  
+- **status**: Megmutatja a módosított, előkészített vagy követetlen fájlok aktuális állapotát.  
 
-7. **git pull <remote> <branch>**: Letölti és egyesíti a távoli ág frissítéseit a helyi ágba.  
+- **push <remote> <branch>**: Feltölti a helyi commitokat a megadott távoli ágra.  
 
-8. **git branch**: Listázza az ágakat vagy új ágat hoz létre a `git branch <név>` paranccsal.  
+- **pull <remote> <branch>**: Letölti és egyesíti a távoli ág frissítéseit a helyi ágba.  
 
-9. **git checkout <branch>**: Átvált a megadott ágra vagy visszaállítja a fájlokat.  
+- **branch**: Listázza az ágakat vagy új párhuzamos ágat hoz létre a `git branch <név>` paranccsal.  
 
-10. **git merge <branch>**: A megadott ág változtatásait egyesíti az aktuális ágba.  
+- **checkout <branch>**: Átvált a megadott ágra vagy visszaállítja a fájlokat.  
 
-11. **git log**: Megjeleníti a commit előzményeket azonosítókkal, szerzőkkel, dátumokkal és üzenetekkel.  
+- **merge <branch>**: A megadott ág változtatásait egyesíti az aktuális ágba.  
 
-12. **git diff**: Megmutatja a különbségeket a munkakönyvtár, előkészített fájlok vagy commitok között.  
+- **log**: Megjeleníti a commit előzményeket azonosítókkal, szerzőkkel, dátumokkal és üzenetekkel.  
 
-13. **git stash**: Ideiglenesen menti a nem commitolt változtatásokat ágváltáshoz vagy más feladathoz.  
+- **diff**: Megmutatja a különbségeket a munkakönyvtár, előkészített fájlok vagy commitok között.  
 
-14. **git remote add <name> <url>**: Távoli tárolót kapcsol a helyi Git konfigurációhoz.  
+- **stash**: Ideiglenesen menti a nem commitolt változtatásokat ágváltáshoz vagy más feladathoz.  
 
-15. **git fetch <remote>**: Letölti a távoli tároló frissítéseit anélkül, hogy egyesítené őket helyben.
+- **pull request**: Kérelem a kód átnézésére és beolvasztására a távoli repozitóriumban.
+
+- **git remote add <name> <url>**: Távoli tárolót kapcsol a helyi Git konfigurációhoz.  
+
+- **git fetch <remote>**: Letölti a távoli tároló frissítéseit anélkül, hogy egyesítené őket helyben.
+
+- **fork** - Egy repozitórium másolatának készítése saját fiókban.
+
+- **rebase** - Az ág történetének átírása a változtatások új alapra helyezésével.
+
+- **verzió kezelés** - Szoftver, amely nyomon követi és kezeli a kód változásait.
+
+## HTML5, CSS3
+- **HTML5** - Weboldalak struktúrájának létrehozására szolgáló jelölőnyelv legújabb verziója.
+  
+- **CSS3** - Weboldalak stílusának és elrendezésének meghatározására szolgáló nyelv.
+  
+- **szemantikus elemek** - HTML-elemek, amelyek világosan leírják tartalmuk jelentését.
+  
+- **media queries** - CSS technika különböző képernyőméretekhez való alkalmazkodáshoz.
+  
+- **pseudo-class** - CSS szelektorok, amelyek elemek állapotát célozzák meg.
+
+- **<hr>** - HTML elem vízszintes vonal beszúrására a weboldalon.  
+
+- **<ol>** - HTML elem sorszámozott lista létrehozására.  
+
+- **shorthand property** - CSS tulajdonság, amely több tulajdonságot egyetlen deklarációban egyesít.  
+
+- **box model** - CSS koncepció, amely az elemek elrendezését és méretezését írja le.
+  
+## JavaScript, ECMAScript
+- **ECMAScript** - A JavaScript szabványosított specifikációja.
+  
+- **async/await** - Szintaxis aszinkron műveletek kezelésére Promise-okkal.
+
+- **$.ajax** - jQuery metódus aszinkron HTTP kérések küldésére.
+  
+- **DOM** - Document Object Model, a weboldal elemeinek programozható reprezentációja.
+  
+- **event listener** - Függvény, amely egy eseményre reagál.
+  
+- **closure** - Függvény, amely hozzáfér a külső hatókör változóhoz.
+  
+- **Promise** - Aszinkron műveletek eredményének reprezentálása.
+  
+- **arrow function** - Rövidített szintaxisú függvénykifejezés.
+  
+- **module** - Kódszervezési egység JavaScriptben az importáláshoz/exportáláshoz.
+
+- **null** - JavaScript érték, amely szándékos üres értéket jelöl.
+
+- **undefined** - JavaScript érték, amely egy nem definiált változóra utal.
+
+## Tiszta kód alapelvek
+- **DRY** - Don’t Repeat Yourself, az ismétlődő kód minimalizálása.
+  
+- **KISS** - Keep It Simple, Stupid, az egyszerű kód előnyben részesítése.
+  
+- **YAGNI** - You Aren’t Gonna Need It, csak a szükséges funkciók implementálása.
+  
+- **SOLID** - Objektumorientált tervezési elvek gyűjteménye.
+  
+- **refactoring / újraszervezés** - Kód átdolgozása a funkcionalitás megváltoztatása nélkül.
+  
+- **technikai adósság** - Gyors, de nem optimális kódolásból eredő jövőbeli költségek.
+
+- **kódszag** - Olyan kódstruktúra, amely potenciális problémára utal.
+
+- **elnevezési konvenció** - Szabályok a változók és függvények elnevezésére az olvashatóságért.
+
+- **egyetlen felelősség elve** - Egy osztály/függvény csak egy feladatot végezzen.
+
+
+## Adatbázis-tervezés, adatbázis-kezelés, SQL
+- **SQL** - Structured Query Language adatbázisok lekérdezésére és kezelésére.
+  
+- **normalizálás** - Adatbázis redundanciájának csökkentése és konzisztenciájának biztosítása.
+  
+- **primary key** - Egyedi azonosító egy tábla rekordjaihoz.
+  
+- **foreign key** - Egy tábla oszlopa, amely egy másik tábla primary key-ére hivatkozik.
+  
+- **index** - Adatbázis-struktúra a lekérdezések sebességének növelésére.
+
+- **join** - Több tábla adatainak összekapcsolása lekérdezésekhez.
+  
+- **MongoDB** - NoSQL dokumentumalapú adatbázis, JSON-szerű adatok tárolására. Rugalmas sémával működik, alkalmas nagy adathalmazokhoz és skálázható alkalmazásokhoz.
+  
+- **MySQL** - Relációs adatbázis-kezelő rendszer, SQL-t használ táblázatos adatstruktúrákhoz. Strukturált, nagy teljesítményű, alkalmas hagyományos alkalmazásokhoz.
+  
+- **NoSQL** - Nem relációs adatbázisok, amelyek rugalmas adatmodelleket támogatnak.
+
+- **MariaDB** - Nyílt forráskódú relációs adatbázis-kezelő, MySQL-kompatibilis.  
+
+- **Oracle** - Relációs adatbázis-kezelő rendszer nagyvállalati környezetekhez.  
+
+- **schema** - Az adatbázis struktúrájának és szabályainak leírása.
+
+## Mobil alkalmazásfejlesztés
+- **native app** - Egy adott platformra (iOS, Android) fejlesztett alkalmazás.
+  
+- **hybrid app** - Webes technológiákkal készült, de natív alkalmazásként működő app.
+  
+- **cross-platform** - Több platformon futtatható alkalmazások fejlesztése.
+  
+- **Flutter** - Google keretrendszer cross-platform mobilalkalmazásokhoz.
+  
+- **React Native** - JavaScript alapú keretrendszer natív mobilalkalmazásokhoz.
+
+- **Java/Kotlin** - Programozási nyelvek Android natív alkalmazásfejlesztéshez.  
+
+- **Objective-C/Swift** - Nyelvek iOS natív alkalmazásfejlesztéshez.  
+
+
+## Frontend készítésre szolgáló JavaScript keretrendszerek
+- **React** - JavaScript könyvtár felhasználói felületek készítéséhez.
+
+- **MVVM** - Model-View-ViewModel, frontend tervezési minta adat és UI szétválasztására.  
+  
+- **Vue.js** - Nyílt forráskódú progresszív JavaScript MVVM keretrendszer frontend fejlesztéshez.
+  
+- **Angular** - TypeScript alapú keretrendszer komplex webalkalmazásokhoz.
+
+- **Ember.js** - JavaScript keretrendszer strukturált webalkalmazásokhoz.
+
+- **Backbone** - JavaScript frontend keretrendszer.
+  
+
+- **state management** - Az alkalmazás állapotának kezelése frontend keretrendszerekben.
+  
+- **component** - Újrafelhasználható UI elem egy frontend keretrendszerben.
+  
+- **state** - A komponens aktuális állapotát tároló adatstruktúra.
+  
+- **props** - Adatok átadása komponensek között Reactben vagy Vue-ban
+
+
+## Backend készítésre szolgáló nyelvek és keretrendszerek, ORM
+- **Node.js** - JavaScript futtatókörnyezet szerveroldali fejlesztéshez.
+  
+- **Django** - Python alapú backend keretrendszer webalkalmazásokhoz.
+  
+- **Spring** - Java alapú keretrendszer vállalati alkalmazásokhoz.
+
+- **Laravel** - PHP keretrendszer webalkalmazások gyors fejlesztéséhez.
+  
+- **Symfony** - PHP keretrendszer skálázható webalkalmazásokhoz.
+  
+- **Zend Framework** - PHP keretrendszer vállalati szintű alkalmazásokhoz.
+   
+- **HTTP method** - Protokollparancsok, mint GET, POST, PUT a szerverrel való kommunikációhoz.
+  
+- **ORM** - Object-Relational Mapping, objektumok és adatbázisok közötti leképezés.
+  
+- **REST API** - Webes API, amely HTTP kérésekkel kommunikál.
+  
+- **Express** - Node.js alapú könnyű keretrendszer API-k készítéséhez.
+  
+- **middleware** - Kód, amely a kérés és válasz között fut a backendben.
+
+## Objektum Orientált Programozás (OOP)
+- **class** - Objektumok létrehozására szolgáló sablon.
+  
+- **object** - Egy osztály példánya, amely adatokat és viselkedést tartalmaz.
+  
+- **öröklődés** - Egy osztály tulajdonságainak és metódusainak átvétele.
+
+- **zártság/encapsulation** - Adatok és metódusok elrejtése egy osztályon belül (public, private, protected).
+  
+- **poliformizmus (toString())** - Objektumok különböző formákban való használata.
+  
+- **absztrakt osztály** - NEM példányosítható (adattag, metódusa, ...).
+
+- **interface** - üres metódusok
+
+- Liskov-helyettesítési elv – Egy osztály bármelyik leszármazottja helyettesítheti az alaposztályt anélkül, hogy a program működése megváltozna vagy hibás lenne.
+
+- Lekérdező metódus (getter) – Olyan metódus, amely egy osztály egy tulajdonságának értékét olvassa ki.
+
+- Beállító metódus (setter) – Olyan metódus, amely egy osztály egy tulajdonságának értékét állítja be.
+
+- Tulajdonság (property) – Olyan osztályelem, amely kívülről változóként viselkedik, de belül lekérdező és beállító metódusok szabályozzák.
+
+## Tartalomkezelő rendszerek (CMS)
+- **CMS** - Tartalomkezelő rendszer weboldalak tartalmának kezelésére.
+  
+- **WordPress** - Népszerű CMS weboldalak és blogok készítéséhez.
+  
+- **plugin** - CMS funkcionalitását bővítő kiegészítő.
+  
+- **theme** - A CMS weboldal megjelenését meghatározó sablon.
+
+- **content management** - Weboldalak tartalmának létrehozása, szerkesztése és publikálása.  
+
+- **headless CMS** - Tartalomkezelő rendszer, amely API-n keresztül biztosít tartalmat.
+
+## Tesztelés
+
+- **fekete dobozos teszt** - A rendszer működését csak a bemenetek és kimenetek alapján vizsgálja, anélkül hogy ismerné a belső működést.
+
+- **dehér dobozos teszt** - A tesztelő ismeri a szoftver belső kódját és logikáját, és ezek alapján tervezi a teszteket.
+  
+- **szürke dobozos tesztelés** - ahol a tesztelő részleges ismerettel rendelkezik a szoftver belső működéséről, kombinálva a külső funkcionalitás tesztelését.
+
+- **egységteszt** -  Egyéni kódegységek (pl. függvények, osztályok) tesztelése elszigetelten, függetlenül más rendszerelemektől.
+  
+- **integrációs teszt** -  Több modul vagy komponens közötti együttműködés helyességét ellenőrzi, például adatfolyamokat vagy függőségeket tesztelve.
+
+- **end-to-end test** -  A teljes rendszer működését teszteli a felhasználói felülettől az adatbázisig, valós felhasználói forgatókönyvek alapján.
+  
+- **TDD (tesztvezérelt fejlesztés)** – Olyan fejlesztési módszertan, ahol előbb a teszteseteket írjuk meg, majd ez alapján fejlesztjük le a működő kódot.
+  
+- **mockolás** - Külső függőségek szimulálása teszteléshez.
+  
+- **kód lefedettség** - A tesztelt kód aránya a teljes kódbázishoz képest.
+
+- **rendszer teszt** - A teljes szoftverrendszer működésének átfogó tesztelése, beleértve a funkcionális és nem-funkcionális követelményeket is.
+
+- **elfogadási teszt** – A végfelhasználó vagy megrendelő által jóváhagyott tesztek, amelyek igazolják, hogy a rendszer megfelel az üzleti elvárásoknak.
+  
+- **Jest** - JavaScript teszt-keretrendszer unit és integrációs tesztekhez.  
+
+- **Jasmine** - JavaScript teszt-keretrendszer viselkedésvezérelt(BDD) fejlesztéshez.  
+
+- **Mocha** - Rugalmas JavaScript teszt-keretrendszer aszinkron tesztekhez.  
+
+
+## Egyebek
+- **Java/Swing** - Java könyvtár asztali GUI alkalmazásokhoz.
+- Figyelj arra, hogy a válaszok között van olyan megoldás, ami nem is létezik pl: "Bingo", ami egy nem létező JavaScript teszt-keretrendszer.
