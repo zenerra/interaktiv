@@ -44,6 +44,7 @@ Jegyzet az interaktív vizsgához
 - **verzió kezelés** - Szoftver, amely nyomon követi és kezeli a kód változásait.
 
 ## HTML5, CSS3
+
 - **HTML5** - Weboldalak struktúrájának létrehozására szolgáló jelölőnyelv legújabb verziója.
   
 - **CSS3** - Weboldalak stílusának és elrendezésének meghatározására szolgáló nyelv.
@@ -54,9 +55,9 @@ Jegyzet az interaktív vizsgához
   
 - **pseudo-class** - CSS szelektorok, amelyek elemek állapotát célozzák meg.
 
-- **<hr>** - HTML elem vízszintes vonal beszúrására a weboldalon.  
-
-- **<ol>** - HTML elem sorszámozott lista létrehozására.  
+- **\<hr\>** - HTML elem vízszintes vonal beszúrására a weboldalon.
+   
+- **\<ol\>** - HTML elem sorszámozott lista létrehozására.
 
 - **shorthand property** - CSS tulajdonság, amely több tulajdonságot egyetlen deklarációban egyesít.  
 
