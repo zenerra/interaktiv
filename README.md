@@ -216,6 +216,102 @@ Jegyzet az interaktív vizsgához
 
 - Tulajdonság (property) – Olyan osztályelem, amely kívülről változóként viselkedik, de belül lekérdező és beállító metódusok szabályozzák.
 
+- Példa:
+```csharp
+// Interfész a viselkedés egységesítéséhez
+public interface ISzemély
+{
+    string Részletek();
+}
+
+// Alaposztály öröklődéshez
+public abstract class Entitás
+{
+    public static int PéldánySzámláló { get; private set; } // Statikus számláló
+
+    public Entitás()
+    {
+        PéldánySzámláló++;
+    }
+
+    public abstract string Típus(); // Absztrakt metódus
+}
+
+// Eseménykezelő delegált
+public delegate void ÁtlagVáltozottEseményKezelő(object küldő, double újÁtlag);
+
+public class Személy : Entitás, ISzemély
+{
+    // Privát mezők a kapszulázáshoz
+    private int _azonosító;
+    private double _átlag;
+    private string _név;
+    private DateTime _dátum;
+
+    // Nyilvános tulajdonságok validációval
+    public int Azonosító
+    {
+        get => _azonosító;
+        set => _azonosító = value >= 0 ? value : throw new ArgumentException("Az azonosító nem lehet negatív.");
+    }
+
+    public double Átlag
+    {
+        get => _átlag;
+        set
+        {
+            if (value < 0 || value > 100) throw new ArgumentException("Az átlag 0 és 100 között legyen.");
+            _átlag = value;
+            ÁtlagVáltozott?.Invoke(this, value); // Esemény kiváltása
+        }
+    }
+
+    public string Név
+    {
+        get => _név;
+        set => _név = string.IsNullOrEmpty(value) ? throw new ArgumentException("A név nem lehet üres.") : value;
+    }
+
+    public DateTime Dátum
+    {
+        get => _dátum;
+        set => _dátum = value;
+    }
+
+    // Csak olvasható tulajdonság
+    public string Leírás => $"{Név} (ID: {Azonosító}, Átlag: {Átlag})";
+
+    // Statikus tulajdonság
+    public static string AlapNév { get; } = "Ismeretlen";
+
+    // Esemény
+    public event ÁtlagVáltozottEseményKezelő ÁtlagVáltozott;
+
+    // Konstruktorok
+    public Személy(int azonosító, double átlag, string név, DateTime dátum)
+    {
+        Azonosító = azonosító;
+        Átlag = átlag;
+        Név = név;
+        Dátum = dátum;
+    }
+
+    public Személy() : this(0, 0.0, AlapNév, DateTime.Now) { }
+
+    // Virtuális metódus
+    public virtual string Összegzés() => $"Személy: {Név}";
+
+    // Interfész metódus
+    public string Részletek() => Leírás;
+
+    // Absztrakt metódus felülírása
+    public override string Típus() => "Személy";
+
+    // ToString felülírása
+    public override string ToString() => Leírás;
+}
+```
+
 ## Tartalomkezelő rendszerek (CMS)
 - **CMS** - Tartalomkezelő rendszer weboldalak tartalmának kezelésére.
   
@@ -233,7 +329,7 @@ Jegyzet az interaktív vizsgához
 
 - **fekete dobozos teszt** - A rendszer működését csak a bemenetek és kimenetek alapján vizsgálja, anélkül hogy ismerné a belső működést.
 
-- **dehér dobozos teszt** - A tesztelő ismeri a szoftver belső kódját és logikáját, és ezek alapján tervezi a teszteket.
+- **fehér dobozos teszt** - A tesztelő ismeri a szoftver belső kódját és logikáját, és ezek alapján tervezi a teszteket.
   
 - **szürke dobozos tesztelés** - ahol a tesztelő részleges ismerettel rendelkezik a szoftver belső működéséről, kombinálva a külső funkcionalitás tesztelését.
 
@@ -250,6 +346,12 @@ Jegyzet az interaktív vizsgához
 - **kód lefedettség** - A tesztelt kód aránya a teljes kódbázishoz képest.
 
 - **rendszer teszt** - A teljes szoftverrendszer működésének átfogó tesztelése, beleértve a funkcionális és nem-funkcionális követelményeket is.
+
+- **tesztpiramis:**
+1. Manuális tesztek
+2. GUI / UI tesztek
+3. Elfogadási / integrációs tesztek
+4. Egység / komponens tesztek
 
 - **elfogadási teszt** – A végfelhasználó vagy megrendelő által jóváhagyott tesztek, amelyek igazolják, hogy a rendszer megfelel az üzleti elvárásoknak.
   
