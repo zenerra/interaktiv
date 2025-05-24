@@ -348,10 +348,9 @@ public class Személy : Entitás, ISzemély
 - **rendszer teszt** - A teljes szoftverrendszer működésének átfogó tesztelése, beleértve a funkcionális és nem-funkcionális követelményeket is.
 
 - **tesztpiramis:**
-1. Manuális tesztek
-2. GUI / UI tesztek
-3. Elfogadási / integrációs tesztek
-4. Egység / komponens tesztek
+1. GUI / UI tesztek
+2. Elfogadási / integrációs tesztek
+3. Egység / komponens tesztek
 
 - **elfogadási teszt** – A végfelhasználó vagy megrendelő által jóváhagyott tesztek, amelyek igazolják, hogy a rendszer megfelel az üzleti elvárásoknak.
   
