@@ -111,13 +111,18 @@ Jegyzet az interaktív vizsgához
   
 - **normalizálás** - Adatbázis redundanciájának csökkentése és konzisztenciájának biztosítása.
   
-- **primary key** - Egyedi azonosító egy tábla rekordjaihoz.
+- **PRIMARY KEY** - Egyedi azonosító egy tábla rekordjaihoz.
   
-- **foreign key** - Egy tábla oszlopa, amely egy másik tábla primary key-ére hivatkozik.
+- **FOREIGN KEY** - Egy tábla oszlopa, amely egy másik tábla primary key-ére hivatkozik.
   
-- **index** - Adatbázis-struktúra a lekérdezések sebességének növelésére.
+- **INDEX** - Adatbázis-struktúra a lekérdezések sebességének növelésére.
 
-- **join** - Több tábla adatainak összekapcsolása lekérdezésekhez.
+- **JOIN** - Több tábla adatainak összekapcsolása lekérdezésekhez.
+
+- **JOIN fajtái:**
+  1. CROSS JOIN (Minden sort összekapcsol minden sorral a másik táblából, így a két tábla sorainak szorzatát adja)
+  2. LEFT/RIGHT JOIN (bal/jobb oldali tábla összes sora + egyező jobb/bal oldali sorok)
+  3. INNER JOIN (Csak azokat a sorokat adja vissza, amelyek mindkét táblában megfelelnek a megadott feltételnek)
   
 - **MongoDB** - NoSQL dokumentumalapú adatbázis, JSON-szerű adatok tárolására. Rugalmas sémával működik, alkalmas nagy adathalmazokhoz és skálázható alkalmazásokhoz.
   
@@ -363,4 +368,4 @@ public class Személy : Entitás, ISzemély
 
 ## Egyebek
 - **Java/Swing** - Java könyvtár asztali GUI alkalmazásokhoz.
-- Figyelj arra, hogy a válaszok között van olyan megoldás, ami nem is létezik pl: "Bingo", ami egy nem létező JavaScript teszt-keretrendszer.
+- Figyelj arra, hogy a válaszok között van olyan megoldás, ami nem is létezik pl: "Bingo", ami egy nem létező "JavaScript teszt-keretrendszer".
