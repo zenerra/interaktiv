@@ -127,12 +127,18 @@ Jegyzet az interaktív vizsgához
 - **MongoDB** - NoSQL dokumentumalapú adatbázis, JSON-szerű adatok tárolására. Rugalmas sémával működik, alkalmas nagy adathalmazokhoz és skálázható alkalmazásokhoz.
   
 - **MySQL** - Relációs adatbázis-kezelő rendszer, SQL-t használ táblázatos adatstruktúrákhoz. Strukturált, nagy teljesítményű, alkalmas hagyományos alkalmazásokhoz.
+
+- **MariaDB** - Nyílt forráskódú relációs adatbázis-kezelő, MySQL-kompatibilis.  
   
 - **NoSQL** - Nem relációs adatbázisok, amelyek rugalmas adatmodelleket támogatnak.
 
-- **MariaDB** - Nyílt forráskódú relációs adatbázis-kezelő, MySQL-kompatibilis.  
+- **Relációs adatmodell** - MySQL, PostgreSQL, MariaDB, Oracle Database használja
 
-- **Oracle** - Relációs adatbázis-kezelő rendszer nagyvállalati környezetekhez.  
+- **Hierarchikus adatmodell** - fa-szerű struktúra (szervezeti struktúrák, fájlrendszerek)
+
+- **Hálós adatmodell** - adatok gráf-szerű struktúrában vannak, lehetővé téve összetettebb, (N:N) kapcsolatokat, a rekordok csomópontok, amelyeket élek kötnek össze.
+
+- **Objektumorientált adatmodell** - Az adatokat objektumokként tárolja, amelyek attribútumokat és metódusokat tartalmaznak
 
 - **schema** - Az adatbázis struktúrájának és szabályainak leírása.
 
@@ -164,7 +170,6 @@ Jegyzet az interaktív vizsgához
 - **Ember.js** - JavaScript keretrendszer strukturált webalkalmazásokhoz.
 
 - **Backbone** - JavaScript frontend keretrendszer.
-  
 
 - **state management** - Az alkalmazás állapotának kezelése frontend keretrendszerekben.
   
@@ -338,9 +343,9 @@ public class Személy : Entitás, ISzemély
   
 - **szürke dobozos tesztelés** - ahol a tesztelő részleges ismerettel rendelkezik a szoftver belső működéséről, kombinálva a külső funkcionalitás tesztelését.
 
-- **egységteszt** -  Egyéni kódegységek (pl. függvények, osztályok) tesztelése elszigetelten, függetlenül más rendszerelemektől.
-  
 - **integrációs teszt** -  Több modul vagy komponens közötti együttműködés helyességét ellenőrzi, például adatfolyamokat vagy függőségeket tesztelve.
+
+- **egységteszt** -  Egyéni kódegységek (pl. függvények, osztályok) tesztelése elszigetelten, függetlenül más rendszerelemektől.
 
 - **end-to-end test** -  A teljes rendszer működését teszteli a felhasználói felülettől az adatbázisig, valós felhasználói forgatókönyvek alapján.
   
